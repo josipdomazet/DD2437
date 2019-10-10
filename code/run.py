@@ -1,7 +1,6 @@
 from util import *
 from rbm import RestrictedBoltzmannMachine
 from dbn import DeepBeliefNet
-from simpler_dbn import SimperDeepBeliefNet
 import sys
 
 
