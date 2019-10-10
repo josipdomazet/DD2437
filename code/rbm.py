@@ -246,7 +246,7 @@ class RestrictedBoltzmannMachine():
             pass
 
         else:
-            probs_v_given_h = np.matmul(hidden_minibatch, self.weight_h_to_v) 
+            probs_v_given_h = np.matmul(hidden_minibatch, self.weight_h_to_v)
             probs_v_given_h = sigmoid(probs_v_given_h + self.bias_v)
             activations = sample_binary(probs_v_given_h)
             return probs_v_given_h, activations
